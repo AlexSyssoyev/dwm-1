@@ -171,7 +171,6 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,		XK_c,		spawn,		SHCMD("cliptompv") },
 	{ MODKEY,			XK_v,		spawn,		SHCMD("toggle audio; pkill -RTMIN+15 dwmblocks ") },
 { MODKEY|ShiftMask,		XK_v,		spawn,		SHCMD("{ killall xcompmgr || setsid xcompmgr & } ; xwallpaper --zoom ~/.local/share/bg") },
-//{ MODKEY|ShiftMask,		XK_v,		spawn,		SHCMD("{ killall xcompmgr || setsid xcompmgr & } ; setbg") },
 	{ MODKEY,			XK_b,		togglebar,	{0} },
 	/* { MODKEY|ShiftMask,		XK_b,		spawn,		SHCMD("") }, */
 	{ MODKEY,			XK_n,		spawn,		SHCMD("st -e newsboat") },
