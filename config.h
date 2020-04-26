@@ -129,19 +129,12 @@ static Key keys[] = {
 	{ MODKEY,			XK_Tab,		view,		{0} },
 	/* { MODKEY|ShiftMask,		XK_Tab,		spawn,		SHCMD("") }, */
 	{ MODKEY,			XK_q,		killclient,	{0} },
-<<<<<<< HEAD
 	 { MODKEY|ShiftMask,		XK_q,		spawn,		SHCMD("kill -9 $(xdotool getwindowfocus getwindowpid)") },
 	{ MODKEY,			XK_w,		spawn,		SHCMD("$BROWSER") },
 	{ MODKEY|ShiftMask,		XK_w,		spawn,		SHCMD("st -e sudo nmtui") },
 	//{ MODKEY,			XK_e,		spawn,		SHCMD("st -e neomutt ; pkill -RTMIN+12 dwmblocks; rmdir ~/.abook") },
-	{ MODKEY|ShiftMask,		XK_e,		spawn,		SHCMD("tutorialvids") },
-=======
-	{ MODKEY|ShiftMask,		XK_q,		spawn,		SHCMD("sysact") },
-	{ MODKEY,			XK_w,		spawn,		SHCMD("$BROWSER") },
-	{ MODKEY|ShiftMask,		XK_w,		spawn,		SHCMD("st -e sudo nmtui") },
 	{ MODKEY,			XK_e,		spawn,		SHCMD("st -e neomutt ; pkill -RTMIN+12 dwmblocks; rmdir ~/.abook") },
 	{ MODKEY|ShiftMask,		XK_e,		spawn,		SHCMD("st -e abook -C ~/.config/abook/abookrc --datafile ~/.config/abook/addressbook") },
->>>>>>> 806bb2a2bfde3d50d7405126729ed2a2544f11ca
 	{ MODKEY,			XK_r,		spawn,		SHCMD("st -e lf") },
 	{ MODKEY|ShiftMask,		XK_r,		spawn,		SHCMD("st -e htop") },
 	{ MODKEY,			XK_t,		setlayout,	{.v = &layouts[0]} },
@@ -187,25 +180,20 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,		XK_z,		incrgaps,	{.i = -1 } },
 	/* { MODKEY,			XK_x,		spawn,		SHCMD("") }, */
 	/* { MODKEY|ShiftMask,		XK_x,		spawn,		SHCMD("") }, */
-<<<<<<< HEAD
 	{ MODKEY,			XK_c,		spawn,		SHCMD("st -e bc -l") },
 	{ MODKEY|ShiftMask,		XK_c,		spawn,		SHCMD("cliptompv") },
 	{ MODKEY,			XK_v,		spawn,		SHCMD("toggle audio; pkill -RTMIN+15 dwmblocks ") },
-{ MODKEY|ShiftMask,		XK_v,		spawn,		SHCMD("{ killall xcompmgr || setsid xcompmgr & } ; xwallpaper --zoom ~/.local/share/bg") },
-	{ MODKEY,			XK_b,		togglebar,	{0} },
+	{ MODKEY|ShiftMask,		XK_v,		spawn,		SHCMD("{ killall xcompmgr || setsid xcompmgr & } ; xwallpaper --zoom ~/.local/share/bg") },
 	/* { MODKEY|ShiftMask,		XK_b,		spawn,		SHCMD("") }, */
-	{ MODKEY,			XK_n,		spawn,		SHCMD("st -e newsboat") },
 	/* { MODKEY|ShiftMask,		XK_n,		spawn,		SHCMD("") }, */
-=======
 	/* { MODKEY,			XK_c,		spawn,		SHCMD("") }, */
 	/* { MODKEY|ShiftMask,		XK_c,		spawn,		SHCMD("") }, */
 	/* { MODKEY,			XK_v,		spawn,		SHCMD("") }, */
 	/* { MODKEY|ShiftMask,		XK_v,		spawn,		SHCMD("") }, */
 	/* { MODKEY,			XK_b,		spawn,		SHCMD("") }, */
 	/* { MODKEY|ShiftMask,		XK_b,		spawn,		SHCMD("") }, */
-	{ MODKEY,			XK_n,		spawn,		SHCMD("st -e nvim -c VimwikiIndex") },
-	{ MODKEY|ShiftMask,		XK_n,		spawn,		SHCMD("st -e newsboat; pkill -RTMIN+6 dwmblocks") },
->>>>>>> 806bb2a2bfde3d50d7405126729ed2a2544f11ca
+	{ MODKEY|ShiftMask,		XK_n,		spawn,		SHCMD("st -e nvim -c VimwikiIndex") },
+	{ MODKEY,			XK_n,		spawn,		SHCMD("st -e newsboat; pkill -RTMIN+6 dwmblocks") },
 	{ MODKEY,			XK_m,		spawn,		SHCMD("st -e ncmpcpp") },
 	{ MODKEY|ShiftMask,		XK_m,		spawn,		SHCMD("pamixer -t; kill -44 $(pidof dwmblocks)") },
 	{ MODKEY,			XK_comma,	spawn,		SHCMD("mpc prev") },
@@ -233,7 +221,8 @@ static Key keys[] = {
 	{ MODKEY,			XK_F9,		spawn,		SHCMD("dmenumount") },
 	{ MODKEY,			XK_F10,		spawn,		SHCMD("dmenuumount") },
 	{ MODKEY,			XK_F11,		spawn,		SHCMD("mpv --no-cache --no-osc --no-input-default-bindings --input-conf=/dev/null --title=webcam $(ls /dev/video[0,2,4,6,8] | tail -n 1)") },
-	{ MODKEY,			XK_F12,		xrdb,		{.v = NULL } },
+//{ MODKEY,			XK_F12,		xrdb,		{.v = NULL } },
+	{ MODKEY,			XK_F12,		quit,		{1} },
 	{ MODKEY,			XK_space,	zoom,		{0} },
 	{ MODKEY|ShiftMask,		XK_space,	togglefloating,	{0} },
 
