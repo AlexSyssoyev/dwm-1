@@ -195,7 +195,7 @@ static Key keys[] = {
 	/* { MODKEY,			XK_b,		spawn,		SHCMD("") }, */
 	/* { MODKEY|ShiftMask,		XK_b,		spawn,		SHCMD("") }, */
 	{ MODKEY|ShiftMask,		XK_n,		spawn,		SHCMD("st -e nvim -c VimwikiIndex") },
-	{ MODKEY,			XK_n,		spawn,		SHCMD("st -e newsboat") },
+	{ MODKEY,			XK_n,		spawn,		SHCMD("st -e newsboat; pkill -RTMIN+6 dwmblocks") },
 	{ MODKEY,			XK_m,		spawn,		SHCMD("st -e ncmpcpp") },
 	{ MODKEY|ShiftMask,		XK_m,		spawn,		SHCMD("pamixer -t; kill -44 $(pidof dwmblocks)") },
 	{ MODKEY,			XK_comma,	spawn,		SHCMD("mpc prev") },
