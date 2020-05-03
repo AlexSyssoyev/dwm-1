@@ -125,7 +125,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,		XK_dead_acute,	spawn,		SHCMD("pamixer --allow-boost -d 15; kill -44 $(pidof dwmblocks)") },
 	{ MODKEY,			XK_plus,	spawn,		SHCMD("pamixer --allow-boost -i 5; kill -44 $(pidof dwmblocks)") },
 	{ MODKEY|ShiftMask,		XK_plus,	spawn,		SHCMD("pamixer --allow-boost -i 15; kill -44 $(pidof dwmblocks)") },
-	{ MODKEY,			XK_BackSpace,	spawn,		SHCMD("sysact") },
+	/*{ MODKEY,			XK_BackSpace,	spawn,		SHCMD("sysact") },*/
 	{ MODKEY|ShiftMask,		XK_BackSpace,	spawn,		SHCMD("sysact") },
 
 	{ MODKEY,			XK_Tab,		view,		{0} },
@@ -171,8 +171,8 @@ static Key keys[] = {
 	{ MODKEY,			XK_h,		setmfact,	{.f = -0.05} },
 	/* J and K are automatically bound above in STACKEYS */
 	{ MODKEY,			XK_l,		setmfact,      	{.f = +0.05} },
-	{ MODKEY,			XK_semicolon,	shiftview,	{ .i = 1 } },
-	{ MODKEY|ShiftMask,		XK_semicolon,	shifttag,	{ .i = 1 } },
+	{ MODKEY,			XK_ntilde,	shiftview,	{ .i = 1 } },
+	{ MODKEY|ShiftMask,		XK_ntilde,	shifttag,	{ .i = 1 } },
 	{ MODKEY,			XK_apostrophe,	togglescratch,	{.ui = 1} },
 	/* { MODKEY|ShiftMask,		XK_apostrophe,	spawn,		SHCMD("") }, */
 	{ MODKEY,			XK_Return,	spawn,		{.v = termcmd } },
