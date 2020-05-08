@@ -186,8 +186,8 @@ static Key keys[] = {
 	/* { MODKEY|ShiftMask,		XK_x,		spawn,		SHCMD("") }, */
 	{ MODKEY,			XK_c,		spawn,		SHCMD("st -e bc -l") },
 	{ MODKEY|ShiftMask,		XK_c,		spawn,		SHCMD("cliptompv") },
-	{ MODKEY,			XK_v,		spawn,		SHCMD("toggle audio; pkill -RTMIN+15 dwmblocks ") },
-	{ MODKEY|ShiftMask,		XK_v,		spawn,		SHCMD("{ killall xcompmgr || setsid xcompmgr & } ; xwallpaper --zoom ~/.local/share/bg") },
+	//{ MODKEY,			XK_v,		spawn,		SHCMD() },
+	{ MODKEY|ShiftMask,		XK_v,		spawn,		SHCMD("toggle audio; pkill -RTMIN+15 dwmblocks ") },
 	/* { MODKEY|ShiftMask,		XK_b,		spawn,		SHCMD("") }, */
 	/* { MODKEY|ShiftMask,		XK_n,		spawn,		SHCMD("") }, */
 	/* { MODKEY,			XK_c,		spawn,		SHCMD("") }, */
@@ -221,7 +221,7 @@ static Key keys[] = {
 	{ MODKEY,			XK_F4,		spawn,		SHCMD("st -e pulsemixer; kill -44 $(pidof dwmblocks)") },
 	{ MODKEY,			XK_F5,		xrdb,		{.v = NULL } },
 	{ MODKEY,			XK_F6,		spawn,		SHCMD("toggle mouse; pkill -RTMIN+14 dwmblocks") },
-	//{ MODKEY,			XK_F7,		spawn,		SHCMD("") },
+	{ MODKEY,			XK_F7,		spawn,		SHCMD("{ killall xcompmgr || setsid xcompmgr & } ; xwallpaper --zoom ~/.local/share/bg") },
 	//{ MODKEY,			XK_F8,		spawn,		SHCMD("mailsync") },
 	{ MODKEY,			XK_F9,		spawn,		SHCMD("dmenumount") },
 	{ MODKEY,			XK_F10,		spawn,		SHCMD("dmenuumount") },
