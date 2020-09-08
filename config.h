@@ -223,7 +223,7 @@ static Key keys[] = {
 	{ MODKEY,			XK_F5,		xrdb,		{.v = NULL } },
 	{ MODKEY,			XK_F6,		spawn,		SHCMD("toggle mouse; pkill -RTMIN+7 dwmblocks") },
 	{ MODKEY,			XK_F7,		spawn,		SHCMD("{ killall xcompmgr || setsid xcompmgr & } ; xwallpaper --zoom ~/.local/share/bg") },
-	//{ MODKEY,			XK_F8,		spawn,		SHCMD("mailsync") },
+	{ MODKEY,			XK_F8,		spawn,		SHCMD("mw sync") },
 	{ MODKEY,			XK_F9,		spawn,		SHCMD("dmenumount") },
 	{ MODKEY,			XK_F10,		spawn,		SHCMD("dmenuumount") },
 //{ MODKEY,			XK_F11,		spawn,		SHCMD("setbg ~/Wallpapers/wallpapers") },
