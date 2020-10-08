@@ -200,9 +200,9 @@ static Key keys[] = {
 	{ MODKEY,			XK_m,		spawn,		SHCMD("st -e ncmpcpp") },
 	//{ MODKEY,			XK_m,		spawn,		SHCMD("/usr/lib/brave-bin/brave --profile-directory=Default --app-id=cinhimbnkkaeohfgghhklpknlkffjgod") },
 	{ MODKEY|ShiftMask,		XK_m,		spawn,		SHCMD("pamixer -t; kill -44 $(pidof dwmblocks)") },
-	{ MODKEY,			XK_comma,	spawn,		SHCMD("mpc prev") },
+	{ MODKEY,			XK_comma,	spawn,		SHCMD("mpc prev; pkill -RTMIN+11 dwmblocks") },
 	{ MODKEY|ShiftMask,		XK_comma,	spawn,		SHCMD("mpc seek 0%") },
-	{ MODKEY,			XK_period,	spawn,		SHCMD("mpc next") },
+	{ MODKEY,			XK_period,	spawn,		SHCMD("mpc next; pkill -RTMIN+11 dwmblocks") },
 	{ MODKEY|ShiftMask,		XK_period,	spawn,		SHCMD("mpc repeat") },
 
 	{ MODKEY,			XK_Left,	focusmon,	{.i = -1 } },
