@@ -211,7 +211,8 @@ static Key keys[] = {
 	/* { MODKEY|ShiftMask,		XK_z,		spawn,		SHCMD("") }, */
 	{ MODKEY,			XK_x,		incrgaps,	{.i = -3 } },
 	/* { MODKEY|ShiftMask,		XK_x,		spawn,		SHCMD("") }, */
-	{ MODKEY,			XK_c,		spawn,		SHCMD("st -e bc -l") },
+	/* { MODKEY,			XK_c,		spawn,		SHCMD("st -e bc -l") }, */
+	{ MODKEY,			XK_c,		spawn,		SHCMD("dmenuhandler") },
 	{ MODKEY|ShiftMask,		XK_c,		spawn,		SHCMD("cliptompv") },
 	//{ MODKEY,			XK_v,		spawn,		SHCMD() },
 	{ MODKEY,			XK_less,	spawn,		SHCMD("toggle audio; pkill -RTMIN+13 dwmblocks ") },
