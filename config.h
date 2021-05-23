@@ -284,7 +284,7 @@ static Key keys[] = {
 	{ 0, XF86XK_Search,		spawn,		SHCMD("dmenu_run" ) },
 	{ 0, XF86XK_Sleep,		spawn,		SHCMD("sudo -A zzz") },
 	{ 0, XF86XK_HomePage,		spawn,		SHCMD("$BROWSER") },
-	{ 0, XF86XK_DOS,		spawn,		SHCMD("st") },
+	{ 0, XF86XK_Calculator,		spawn,		SHCMD("st") },
 	{ 0, XF86XK_Tools,		spawn,		SHCMD("toggle audio; pkill -RTMIN+13 dwmblocks") },
 	{ 0, XF86XK_ScreenSaver,	spawn,		SHCMD("slock & xset dpms force off; mpc pause; pauseallmpv") },
 	{ 0, XF86XK_TaskPane,		spawn,		SHCMD("st -e htop") },
